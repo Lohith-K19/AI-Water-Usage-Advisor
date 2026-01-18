@@ -1,6 +1,7 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
+    <meta charset="UTF-8">
     <title>AI Water Usage Advisor</title>
     <link rel="stylesheet" href="style.css">
 </head>
@@ -17,14 +18,19 @@
 <div class="container">
     <h1>AI-Based Water Usage Advisor</h1>
 
-    <label>Daily Water Usage (in liters):</label>
-    <input type="number" id="water">
+    <label>💧 Total Daily Water Usage (Liters)</label>
+    <input type="number" id="water" placeholder="e.g. 500 to 800">
+    <small>Includes bathing, cooking, washing, and cleaning</small>
 
-    <label>Number of People:</label>
-    <input type="number" id="people">
+    <label>👨‍👩‍👧 Number of People Using Water</label>
+    <input type="number" id="people" placeholder="e.g. 3 or 4">
 
     <button onclick="analyzeUsage()">Analyze Usage</button>
 
+    <!-- ERROR MESSAGE -->
+    <div id="error"></div>
+
+    <!-- RESULT -->
     <div id="result"></div>
 </div>
 
